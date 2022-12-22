@@ -18,7 +18,8 @@ while (true) {
     break;
   }
 }
-console.log(result); //1101
+console.log(x); // 1
+console.log(result); // 1101
 console.log(result.split('')); // [ '1', '1', '0', '1' ]
 console.log(result.split('').reverse()); // [ '1', '0', '1', '1' ]
 console.log(result.split('').reverse().join('')); // 1011
@@ -32,3 +33,5 @@ function 이진법(숫자) {
 }
 
 console.log(이진법(11));
+
+// 연습
