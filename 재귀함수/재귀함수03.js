@@ -25,3 +25,29 @@ function 문자열역순(문자) {
 }
 
 console.log(문자열역순('YuJunJae'));
+
+// 연습
+let name2 = 'qwerty';
+let result2 = '';
+
+while (true) {
+  if (name2.length == 1) {
+    result2 += name2;
+    break;
+  }
+
+  let prop = name2.split('');
+  result2 += prop.pop();
+  name2 = prop.join('');
+}
+
+console.log(result2);
+
+// 연습2
+function jh(a) {
+  if (a.length == 1) {
+    return String(a);
+  }
+  return a[a.length - 1] + jh(a.slice(0, a.length - 1));
+}
+console.log(jh('qwertyqwe'));

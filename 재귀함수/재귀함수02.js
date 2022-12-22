@@ -35,3 +35,32 @@ function 이진법(숫자) {
 console.log(이진법(11));
 
 // 연습
+let result2 = '';
+let num = 8;
+while (true) {
+  if (num % 2 == 0) {
+    result2 += '0';
+  } else {
+    result2 += '1';
+  }
+
+  num = Math.floor(num / 2);
+
+  if (num == 0 || num == 1) {
+    result2 += String(num);
+    break;
+  }
+}
+console.log(result2);
+console.log(result2.split('').reverse().join(''));
+
+// 연습2
+function jh(num) {
+  if (num == 0 || num == 1) {
+    return String(num);
+  }
+
+  return jh(Math.floor(num / 2)) + String(num % 2);
+}
+
+console.log(jh(8));
