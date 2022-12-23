@@ -11,3 +11,12 @@ for (let i = 0; i < 6; i++) {
 }
 
 console.log(b);
+
+//재귀함수
+function pn(num) {
+  if (num == 1 || num == 2) {
+    return 1;
+  }
+  return pn(num - 1) + pn(num - 2);
+}
+console.log(pn(5));
